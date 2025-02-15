@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav><!--Sticky nav!-->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<!-- Contact form, <form> tag would include action="someaction.link" if it was functional -->
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea class="messageblock" id="message" name="message" required></textarea>
+
+            <h3>How did you hear about us?</h3>
+            <label><input type="radio" id="sm" name="hdyhau" value="sm"> Social Media</label>
+            <label><input type="radio" id="commercial" name="hdyhau" value="commercial"> Commercial</label>
+            <label><input type="radio" id="googlesearch" name="hdyhau" value="googlesearch"> Google Search</label>
+
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+* {/* everything gets this font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body { /*an extension I used gave me a color box and it filled in the hex code for me*/
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.nav {
+  position: fixed;/*thats a nice sticky nav, you might say. ROUND*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  text-align: center;
+}
+
+.nav li {/*everything you own in a box to the left*/
+  float: left;
+}
+
+.nav li a { 
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {/*basic styling*/
+  background-color: #575757;
+}
+
+h1 {
+  font-size: 4vh;
+  padding-top: 1vh;
+  text-align: center;
+}
+
+.container h3 {/*ended up only using for the text over the radio input but best practices would have been for me to create an underline class or put the style inline with the html but I chose to do this instead*/
+  font-size: 1.9vh; 
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+}
+
+p {
+  font-size: 1.8vh;/*using view height feels better than hardcoding sizes */
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 1.8vh; 
+  margin-top: 10px;/*I'll hardcode the margins though */
+   
+}
+
+.container {
+  max-width: 55%; /* prefer variable to hardcoding even more so with container sizes*/
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #0000009a;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #040404;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+label[for="message"] {
+  display: block;
+  margin-top: 15px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical; /*this is just for the message box really, if you type too much itll resize with your message*/
+}
+
+input[type="submit"] {
+  background: #ffffff;
+  padding: 10px 15px;
+  border:#333;
+  border-style:solid;
+  border-radius: 25px;
+  border-width: 1px;
+  cursor: pointer;
+  font-size: 1.9vh;
+  font-weight: bold;
+  display: block;
+  margin-left: auto; /*this aligns the button right */
+  margin-right: 0;
+}
+
+
+input[type="submit"]:hover {
+  text-decoration: underline;
+  color: #787878;
+  background-color: #a7a7a7;
+  border-radius: 25px;
+}
+
+input[type="radio"] {
+  margin-right: 2px; /*make distance between selector and text*/
+}
+
+
+
+.messageblock {
+  width: 100%;
+  min-height: 150px;
+}
+
+.tablestyle {
+  font-size: 1.7vh;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+table {/*some more basic styling*/
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 10px #0000009a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.caption {
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+th {/*table header*/
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.8vh;
+}
+
+td {/*table data*/
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {/*zebra tables are pretty standard, just makes things easier to read*/
+  background-color: #f9f9f9;
+}
+/* a website without any :hover rules is a dead flat website that needs to realize its not 1999 anymore*/
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td:last-child {/*this makes the prices bold. I think the lines between cells looks pretty bad so having this bold helps readability */
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;/*very basic formatting rules*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container img {/*very basic rules to make things look a little livelier. */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #0000009a;
+}
